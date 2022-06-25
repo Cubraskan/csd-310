@@ -29,3 +29,5 @@ print("\n--DISPLAYING STUDENTS DOCUMENTS FROM find() QUERY--")
 find_students = students.find({})
 for doc in find_students:
     print("Student ID: " + doc["student_id"] + "\n First Name: " + doc["first_name"] + "\n Last Name: " + doc["last_name"] + "\n")
+
+input("End of program, press any key to continue...")
