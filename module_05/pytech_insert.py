@@ -2,6 +2,7 @@ from pymongo import MongoClient
 url="mongodb+srv://admin:admin@cluster0.ihluj.mongodb.net/pytech"
 client=MongoClient(url)
 db=client.pytech
+students = db.students
 
 andrew = {
     "student_id": "1007",
@@ -20,8 +21,6 @@ tim = {
     "first_name": "Tim",
     "last_name": "Lentz"
 }
-
-students = db.students
 
 print("\n -- INSERT STATEMENTS --")
 andrew_student_id = students.insert_one(andrew).inserted_id
