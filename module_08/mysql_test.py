@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import errorcode
 
 config = {
-    "user":"pysports_user",
+    "user":"pysports_user@localhost",
     "password":"MySQL8IsGreat!",
     "database":"pysports",
     "raise_on_warnings": True
