@@ -3,7 +3,7 @@ GRANT ALL PRIVILEGES ON whatabook.* TO'whatabook_user'@'localhost';
 
 CREATE TABLE store (
     store_id    INT  NOT NULL  AUTO_INCREMENT,
-    locale  ARCHAR(500)  NOT NULL,
+    locale  VARCHAR(500)  NOT NULL,
     PRIMARY KEY(store_id)
 );
 
